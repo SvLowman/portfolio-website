@@ -1,14 +1,11 @@
 import React from "react";
-import styled from "styled-components/macro";
-
-const PageContainer = styled.div`
-  border: solid 1px black;
-`;
+// import styled from "styled-components/macro";
+import { Container } from "../components/Container";
 
 const ProjectsPage = () => (
-  <PageContainer>
+  <Container>
     <h1>Die Projekt-Seite 🧐</h1>
-  </PageContainer>
+  </Container>
 );
 
 export default ProjectsPage;

@@ -1,14 +1,11 @@
 import React from "react";
-import styled from "styled-components/macro";
-
-const PageContainer = styled.div`
-  border: solid 1px black;
-`;
+// import styled from "styled-components/macro";
+import { Container } from "../components/Container";
 
 const LandingPage = () => (
-  <PageContainer>
+  <Container>
     <h1>Hello World 😀!</h1>
-  </PageContainer>
+  </Container>
 );
 
 export default LandingPage;

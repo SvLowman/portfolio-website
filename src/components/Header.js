@@ -1,14 +1,11 @@
 import React from "react";
-import styled from "styled-components/macro";
-
-const HeaderContainer = styled.div`
-  border: solid 1px black;
-`;
+// import styled from "styled-components/macro";
+import { Container } from "../components/Container";
 
 const Header = () => (
-  <HeaderContainer>
+  <Container>
     <h3>Sieh da, ein Header 😺</h3>
-  </HeaderContainer>
+  </Container>
 );
 
 export default Header;
