@@ -1,10 +1,17 @@
 import React from "react";
-// import styled from "styled-components/macro";
-import { Container } from "../components/Container";
+import styled from "styled-components/macro";
 import { Link } from "react-router-dom";
 
+const SidebarContainer = styled.div`
+  border: solid 1px black;
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  padding-top: 4rem;
+`;
+
 const Sidebar = () => (
-  <Container>
+  <SidebarContainer>
     <Link to="/">
       <p>🗺 Landing Page</p>
     </Link>
@@ -14,7 +21,7 @@ const Sidebar = () => (
     <Link to="/cv">
       <p>🧶 CV</p>
     </Link>
-  </Container>
+  </SidebarContainer>
 );
 
 export default Sidebar;
