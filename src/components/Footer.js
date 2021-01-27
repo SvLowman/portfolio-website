@@ -1,11 +1,19 @@
 import React from "react";
-// import styled from "styled-components/macro";
-import { Container } from "../components/Container";
+import styled from "styled-components/macro";
+
+const FooterContainer = styled.div`
+  background: white;
+  text-align: center;
+  border: solid 1px black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+`;
 
 const Footer = () => (
-  <Container>
+  <FooterContainer>
     <h3>Voilà, der Footer 🐾</h3>
-  </Container>
+  </FooterContainer>
 );
 
 export default Footer;
