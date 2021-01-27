@@ -7,20 +7,46 @@ const SidebarContainer = styled.div`
   position: fixed;
   width: 20%;
   height: 100%;
-  padding-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (orientation: portrait) {
+    width: 100%;
+    height: 10%;
+    position: relative;
+  }
+`;
+
+const LinkButtonContainer = styled.div`
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  @media (orientation: portrait) {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+`;
+
+const LinkButton = styled.button`
+  border: solid 1px black;
 `;
 
 const Sidebar = () => (
   <SidebarContainer>
-    <Link to="/">
-      <p>🗺 Landing Page</p>
-    </Link>
-    <Link to="/projects">
-      <p>🏗 Projekte</p>
-    </Link>
-    <Link to="/cv">
-      <p>🧶 CV</p>
-    </Link>
+    <LinkButtonContainer>
+      <Link to="/">
+        <LinkButton>🗺 Landing Page</LinkButton>
+      </Link>
+      <Link to="/projects">
+        <LinkButton>🏗 Projekte</LinkButton>
+      </Link>
+      <Link to="/cv">
+        <LinkButton>🧶 CV</LinkButton>
+      </Link>
+    </LinkButtonContainer>
   </SidebarContainer>
 );
 

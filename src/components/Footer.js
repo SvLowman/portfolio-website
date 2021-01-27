@@ -3,6 +3,7 @@ import styled from "styled-components/macro";
 
 const FooterContainer = styled.div`
   background: white;
+  text-align: center;
   border: solid 1px black;
   position: fixed;
   bottom: 0;

@@ -12,6 +12,10 @@ import Footer from "./components/Footer";
 const Main = styled.main`
   display: grid;
   grid-template-columns: 20% auto;
+  @media (orientation: portrait) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 function App() {
