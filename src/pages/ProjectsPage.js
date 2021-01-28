@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 import { Container, TextContainer } from "../components/Container";
-import { projectsContent } from "../components/content";
+import { projectsContent } from "../content/content";
 
 const ProjectCard = styled.div`
   border: solid 1px black;

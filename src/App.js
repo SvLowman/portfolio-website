@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import LandingPage from "./pages/LandingPage";
 import ProjectsPage from "./pages/ProjectsPage";
+import TechStackPage from "./pages/TechStackPage";
 import CVPage from "./pages/CVPage";
 import Footer from "./components/Footer";
 
@@ -30,10 +31,13 @@ function App() {
             <Route exact path="/">
               <LandingPage />
             </Route>
-            <Route exact path="/projects">
+            <Route path="/techstack">
+              <TechStackPage />
+            </Route>
+            <Route path="/projects">
               <ProjectsPage />
             </Route>
-            <Route exact path="/cv">
+            <Route path="/cv">
               <CVPage />
             </Route>
           </Switch>

@@ -38,10 +38,13 @@ const Sidebar = () => (
   <SidebarContainer>
     <LinkButtonContainer>
       <Link to="/">
-        <LinkButton>🗺 Landing Page</LinkButton>
+        <LinkButton>🌍 Landing Page</LinkButton>
       </Link>
       <Link to="/projects">
         <LinkButton>🏗 Projekte</LinkButton>
+      </Link>
+      <Link to="/techstack">
+        <LinkButton>🛠 Techstack</LinkButton>
       </Link>
       <Link to="/cv">
         <LinkButton>🧶 CV</LinkButton>
