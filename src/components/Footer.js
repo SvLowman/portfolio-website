@@ -3,6 +3,7 @@ import styled from "styled-components/macro";
 import email from "../assets/email.svg";
 import githublogo from "../assets/github-logo.svg";
 import linkedinlogo from "../assets/linkedin-logo.svg";
+import neuefischelogo from "../assets/neuefische-logo.svg";
 
 const FooterContainer = styled.div`
   background: white;
@@ -40,10 +41,13 @@ const Footer = () => (
         <p>SvenLohmann@gmx.de</p>
       </MailContainer>
       <a href="https://github.com/SvLowman">
-        <img src={githublogo} alt="GitHub" />
+        <img src={githublogo} alt="GitHub-Profil" />
       </a>
       <a href="https://www.linkedin.com/in/sven-lohmann-90a268205/">
-        <img src={linkedinlogo} alt="LinkedIn" />
+        <img src={linkedinlogo} alt="LinkedIn-Profil" />
+      </a>
+      <a href="https://neuefische.de">
+        <img src={neuefischelogo} alt="neue fische Talent App" />
       </a>
     </ContactContainer>
   </FooterContainer>
