@@ -16,7 +16,7 @@ const HeaderContainer = styled.div`
 
 const Header = () => (
   <HeaderContainer>
-    <h1>Sieh da, ein Header 😺</h1>
+    <h1>SVEN LOHMANN • Web Development</h1>
   </HeaderContainer>
 );
 
