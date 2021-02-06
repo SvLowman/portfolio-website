@@ -13,6 +13,8 @@ const TechStackContainer = styled.div`
 const TechStackCard = styled.div`
   border: solid 1px black;
   width: 30%;
+  margin: 1.5%;
+  padding: 1.5%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -20,6 +22,7 @@ const TechStackCard = styled.div`
   img {
     border: solid 1px black;
     width: 100%;
+    margin-bottom: 1rem;
   }
   div {
     border: solid 1px black;

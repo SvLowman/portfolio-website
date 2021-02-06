@@ -1,3 +1,11 @@
+import html5logo from "../assets/techstack-logos/html5.png";
+import css3logo from "../assets/techstack-logos/css3.png";
+import javascriptlogo from "../assets/techstack-logos/javascript.png";
+import reactlogo from "../assets/techstack-logos/react.png";
+import styledcomponentslogo from "../assets/techstack-logos/styled-components.jpg";
+import nodejslogo from "../assets/techstack-logos/nodejs.png";
+import mongodblogo from "../assets/techstack-logos/mongodb.png";
+
 export const projectsContent = [
   {
     src: "src-Dummy-1",
@@ -19,38 +27,38 @@ export const projectsContent = [
 
 export const techStackContent = [
   {
-    src: "src-Dummy-1",
-    alt: "alt-Dummy-1",
+    src: html5logo,
+    alt: "HTML 5",
     name: "HTML 5",
   },
   {
-    src: "src-Dummy-2",
-    alt: "alt-Dummy-2",
+    src: css3logo,
+    alt: "CSS 3",
     name: "CSS 3",
   },
   {
-    src: "src-Dummy-3",
-    alt: "alt-Dummy-3",
+    src: javascriptlogo,
+    alt: "JavaScript",
     name: "JavaScript ES-8",
   },
   {
-    src: "src-Dummy-4",
-    alt: "alt-Dummy-4",
+    src: reactlogo,
+    alt: "React",
     name: "React 17",
   },
   {
-    src: "src-Dummy-5",
-    alt: "alt-Dummy-5",
+    src: styledcomponentslogo,
+    alt: "Styled-Components",
     name: "Styled-Components",
   },
   {
-    src: "src-Dummy-6",
-    alt: "alt-Dummy-6",
+    src: nodejslogo,
+    alt: "Node.js",
     name: "Node.js",
   },
   {
-    src: "src-Dummy-7",
-    alt: "alt-Dummy-7",
+    src: mongodblogo,
+    alt: "Mongo DB",
     name: "Mongo DB",
   },
 ];
