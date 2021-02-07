@@ -1,3 +1,4 @@
+import tagtracelogo from "../assets/projects/tagtrace-splashpage.png";
 import html5logo from "../assets/techstack-logos/html5.png";
 import css3logo from "../assets/techstack-logos/css3.png";
 import javascriptlogo from "../assets/techstack-logos/javascript.png";
@@ -8,18 +9,25 @@ import mongodblogo from "../assets/techstack-logos/mongodb.png";
 
 export const projectsContent = [
   {
-    src: "src-Dummy-1",
-    alt: "alt-Dummy-1",
-    title: "Titel",
-    description: "Erklärbärgedöns",
+    src: tagtracelogo,
+    alt: "TagTrace",
+    title: "TagTrace",
+    description: [
+      "Durch mein Interesse an Fotografie bin ich auf die Idee gekommen, 'TagTrace' zu entwickeln: Beim Anschauen von Bildern sind wir üblicherweise an die Struktur der Ordner gebunden, in denen sie abgelegt sind. Mithilfe von 'TagTrace' kann der User seine eigene Bildersammlung zusammenstellen, die Bilder mit Tags versehen und dann unabhängig von starren Ordnerstrukturen durchklicken.",
+      "Die Bilder werden auf Cloudinary hochgeladen, die weiteren Daten in einer Collection auf MongoDB abgelegt. Die Benutzeroberfläche ist mit React programmiert.",
+      "Die Tags kann der Betrachter anschließend wie Spuren durch die Sammlung verfolgen. Jedes Bild wird so zu einem thematischen Knotenpunkt, Bilder anschauen zu einer Wanderung durch ein rhizomartiges Gewebe von assoziativen Querverweisen.",
+    ],
     deploymentLink: "https://tagtrace.herokuapp.com",
     repoLink: "https://github.com/SvLowman/tagtrace",
   },
   {
     src: "src-Dummy-2",
-    alt: "alt-Dummy-2",
-    title: "Titeladei",
-    description: "Schwafel Blabla Sülz",
+    alt: "TareBears",
+    title: "TareBears",
+    description: [
+      "Ein Tool, das den Kohlenhydratgehalt von Lebensmitteln in ihr Gummibärchen-Äquivalent umrechnet.",
+      "Der User kann nach seinem Bedürfnis Werte im lokalen Speicher einspeichern und dann zum Berechnen abrufen. Ideal, wenn von der aufgetischten Portion etwas übrig bleibt und Unterzuckerung droht.",
+    ],
     deploymentLink: "https://tarebears-cpdk6ydds.vercel.app",
     repoLink: "https://github.com/SvLowman/tagtrace",
   },

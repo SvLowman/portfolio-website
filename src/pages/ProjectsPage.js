@@ -9,6 +9,9 @@ const ProjectCard = styled.div`
 `;
 const ImageContainer = styled.div`
   border: solid 1px black;
+  img {
+    width: 10rem;
+  }
 `;
 
 const DescriptionContainer = styled.div`
@@ -54,7 +57,9 @@ const ProjectsPage = () => (
             </ImageContainer>
             <DescriptionContainer>
               <Title>{object.title}</Title>
-              <p>{object.description}</p>
+              <p>{object.description[0]}</p>
+              <p>{object.description[1]}</p>
+              <p>{object.description[2]}</p>
               <ButtonContainer>
                 <a href={object.deploymentLink}>
                   <button>Zum Deployment</button>
