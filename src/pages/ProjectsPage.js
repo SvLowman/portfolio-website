@@ -50,30 +50,30 @@ const ProjectsPage = () => (
           pellentesque nec nam aliquam sem. Tortor vitae purus faucibus ornare
           suspendisse sed nisi lacus. Semper feugiat nibh sed pulvinar proin.
         </p>
-        {projectsContent.map((object, index) => (
-          <ProjectCard key={index}>
-            <ImageContainer>
-              <img src={object.src} alt={object.alt} />
-            </ImageContainer>
-            <DescriptionContainer>
-              <Title>{object.title}</Title>
-              <div>
-                {object.description.map((paragraph, index) => (
-                  <p key={index}>{paragraph}</p>
-                ))}
-              </div>
-              <ButtonContainer>
-                <a href={object.deploymentLink}>
-                  <button>Zum Deployment</button>
-                </a>
-                <a href={object.repoLink}>
-                  <button>Zum Repo</button>
-                </a>
-              </ButtonContainer>
-            </DescriptionContainer>
-          </ProjectCard>
-        ))}
       </TextContainer>
+      {projectsContent.map((object, index) => (
+        <ProjectCard key={index}>
+          <ImageContainer>
+            <img src={object.src} alt={object.alt} />
+          </ImageContainer>
+          <DescriptionContainer>
+            <Title>{object.title}</Title>
+            <div>
+              {object.description.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
+            <ButtonContainer>
+              <a href={object.deploymentLink}>
+                <button>Zum Deployment</button>
+              </a>
+              <a href={object.repoLink}>
+                <button>Zum Repo</button>
+              </a>
+            </ButtonContainer>
+          </DescriptionContainer>
+        </ProjectCard>
+      ))}
     </Container>
   </>
 );

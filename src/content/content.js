@@ -6,6 +6,8 @@ import reactlogo from "../assets/techstack-logos/react.png";
 import styledcomponentslogo from "../assets/techstack-logos/styled-components.jpg";
 import nodejslogo from "../assets/techstack-logos/nodejs.png";
 import mongodblogo from "../assets/techstack-logos/mongodb.png";
+import vsclogo from "../assets/techstack-logos/vsc.png";
+import bootstraplogo from "../assets/techstack-logos/bootstrap.png";
 
 export const projectsContent = [
   {
@@ -59,6 +61,7 @@ export const techStackContent = [
     alt: "Styled-Components",
     name: "Styled-Components",
   },
+  { src: bootstraplogo, alt: "Bootstrap 4", name: "Bootstrap 4" },
   {
     src: nodejslogo,
     alt: "Node.js",
@@ -69,6 +72,7 @@ export const techStackContent = [
     alt: "Mongo DB",
     name: "Mongo DB",
   },
+  { src: vsclogo, alt: "Visual Studio Code", name: "Visual Studio Code" },
 ];
 
 export const cvContent = [

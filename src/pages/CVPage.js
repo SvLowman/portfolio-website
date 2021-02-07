@@ -33,21 +33,21 @@ const CVPage = () => (
         Tortor vitae purus faucibus ornare suspendisse sed nisi lacus. Semper
         feugiat nibh sed pulvinar proin.
       </p>
-      <CVContainer>
-        {cvContent.map((object, index) => (
-          <CVCard key={index}>
-            <p>{object.position}</p>
-            <p>{object.company}</p>
-            <p>{object.period}</p>
-            <ul>
-              {object.tasks.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          </CVCard>
-        ))}
-      </CVContainer>
     </TextContainer>
+    <CVContainer>
+      {cvContent.map((object, index) => (
+        <CVCard key={index}>
+          <p>{object.position}</p>
+          <p>{object.company}</p>
+          <p>{object.period}</p>
+          <ul>
+            {object.tasks.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </CVCard>
+      ))}
+    </CVContainer>
   </Container>
 );
 

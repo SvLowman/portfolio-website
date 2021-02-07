@@ -5,6 +5,7 @@ import { techStackContent } from "../content/content";
 
 const TechStackContainer = styled.div`
   border: solid 1px black;
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -57,17 +58,17 @@ const TechStackPage = () => (
         Tortor vitae purus faucibus ornare suspendisse sed nisi lacus. Semper
         feugiat nibh sed pulvinar proin.
       </p>
-      <TechStackContainer>
-        {techStackContent.map((object, index) => (
-          <TechStackCard key={index}>
-            <img src={object.src} alt={object.alt} />
-            <div>
-              <p>{object.name}</p>
-            </div>
-          </TechStackCard>
-        ))}
-      </TechStackContainer>
     </TextContainer>
+    <TechStackContainer>
+      {techStackContent.map((object, index) => (
+        <TechStackCard key={index}>
+          <img src={object.src} alt={object.alt} />
+          <div>
+            <p>{object.name}</p>
+          </div>
+        </TechStackCard>
+      ))}
+    </TechStackContainer>
   </Container>
 );
 
