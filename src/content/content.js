@@ -15,7 +15,7 @@ export const projectsContent = [
     alt: "TagTrace",
     title: "TagTrace",
     description: [
-      "Durch mein Interesse an Fotografie bin ich auf die Idee gekommen, 'TagTrace' zu entwickeln: Beim Anschauen von Bildern sind wir üblicherweise an die Struktur der Ordner gebunden, in denen sie abgelegt sind. Mithilfe von 'TagTrace' kann der User seine eigene Bildersammlung zusammenstellen, die Bilder mit Tags versehen und dann unabhängig von starren Ordnerstrukturen durchklicken.",
+      "Beim Anschauen von Bildern sind wir üblicherweise an die Struktur der Ordner gebunden, in denen sie abgelegt sind. Mithilfe von 'TagTrace' kann der User seine eigene Bildersammlung zusammenstellen, die Bilder mit Tags versehen und dann unabhängig von starren Ordnerstrukturen durchklicken.",
       "Die Bilder werden auf Cloudinary hochgeladen, die weiteren Daten in einer Collection auf MongoDB abgelegt. Die Benutzeroberfläche ist mit React programmiert.",
       "Die Tags kann der Betrachter anschließend wie Spuren durch die Sammlung verfolgen. Jedes Bild wird so zu einem thematischen Knotenpunkt, Bilder anschauen zu einer Wanderung durch ein rhizomartiges Gewebe von assoziativen Querverweisen.",
     ],
@@ -101,8 +101,14 @@ export const cvContent = [
     tasks: ["Konzeption und Betextung von digitalen Lernumgebungen"],
   },
   {
+    position: "Freier Lektor",
+    company: "Freiberuflich",
+    period: "2017 - 2020",
+    tasks: ["Lektorat akademischer Texte"],
+  },
+  {
     position: "Redaktionsmitarbeiter",
-    company: "Infonetwork GmbH, Mediengrupe RTL, Köln",
+    company: "infoNetwork GmbH, Mediengrupe RTL, Köln",
     period: "07 / 2012 - 07 / 2016",
     tasks: [
       "Schreiben, Vertonen und Schneiden von Nachrichtenbeiträgen",
