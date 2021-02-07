@@ -1,4 +1,5 @@
 import tagtracelogo from "../assets/projects/tagtrace-splashpage.png";
+import tarebearslogo from "../assets/projects/tarebears-splashpage.png";
 import html5logo from "../assets/techstack-logos/html5.png";
 import css3logo from "../assets/techstack-logos/css3.png";
 import javascriptlogo from "../assets/techstack-logos/javascript.png";
@@ -23,7 +24,7 @@ export const projectsContent = [
     repoLink: "https://github.com/SvLowman/tagtrace",
   },
   {
-    src: "src-Dummy-2",
+    src: tarebearslogo,
     alt: "TareBears",
     title: "TareBears",
     description: [
