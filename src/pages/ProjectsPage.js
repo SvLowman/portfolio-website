@@ -57,9 +57,11 @@ const ProjectsPage = () => (
             </ImageContainer>
             <DescriptionContainer>
               <Title>{object.title}</Title>
-              <p>{object.description[0]}</p>
-              <p>{object.description[1]}</p>
-              <p>{object.description[2]}</p>
+              <div>
+                {object.description.map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
+              </div>
               <ButtonContainer>
                 <a href={object.deploymentLink}>
                   <button>Zum Deployment</button>

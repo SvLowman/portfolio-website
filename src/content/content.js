@@ -77,9 +77,9 @@ export const cvContent = [
     company: "neue fische - Digital School and Pool for Talent, Köln",
     period: "09 / 2020 - 01 / 2021",
     tasks: [
-      "Intensiv-Coding-Bootcamp in Vollzeit (540 Stunden)",
-      "Entwicklung einer eigenen WebApp",
-      "Erlernen von HTML, CSS, JavaScript, React",
+      "Intensiv-Coding-Bootcamp in Vollzeit (540 Stunden) und remote",
+      "Selbstständige Entwicklung der App 'TagTrace' als Abschlussprojekt",
+      "Programmierpraxis mit HTML, CSS, JavaScript, React, Node.js",
     ],
   },
   {
@@ -87,7 +87,7 @@ export const cvContent = [
     company: "Sächsische Lehmbaugruppe, Leipzig",
     period: "02 / 2019 - 08 / 2020",
     tasks: [
-      "Planung und Durchführung von Unterricht in Grundbildungsfächer für Teilnehmer an einem Schulersatzprojekt",
+      "Planung und Durchführung von Unterricht in Grundbildungsfächern für die Teilnehmer an einem Schulersatzprojekt",
     ],
   },
   {
@@ -100,12 +100,18 @@ export const cvContent = [
     position: "Redaktionsmitarbeiter",
     company: "Infonetwork GmbH, Mediengrupe RTL, Köln",
     period: "07 / 2012 - 07 / 2016",
-    tasks: ["Erstellen von Nachrichtenbeiträgen"],
+    tasks: [
+      "Schreiben, Vertonen und Schneiden von Nachrichtenbeiträgen",
+      "Erstellen von Newsfeeds",
+    ],
   },
   {
     position: "Promotionsstudium Deutsche Philologie",
-    company: "Universität zu Köln, Istitut für deutsche Sprache und Literatur",
+    company: "Universität zu Köln, Institut für deutsche Sprache und Literatur",
     period: "10 / 2010 - 10 / 2016",
-    tasks: ["Abschluss: Dr. phil."],
+    tasks: [
+      "Schwerpunkte: Wissenschaftssprache, Sprachphilosophie, Metapherntheorie",
+      "Abschlussarbeit: 'Aufklärerische Raummetaphorik. Studien zu Johann Heinrich Lamberts 'Neuem Organon''",
+    ],
   },
 ];
