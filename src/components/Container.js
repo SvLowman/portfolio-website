@@ -6,7 +6,8 @@ export const Container = styled.div`
   padding-top: 6rem;
   padding-bottom: 4rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   @media (orientation: portrait) {
     padding-top: 1rem;
   }
