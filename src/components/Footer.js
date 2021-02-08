@@ -6,15 +6,20 @@ import linkedinlogo from "../assets/footer/linkedin-logo.svg";
 import neuefischelogo from "../assets/footer/neuefische-logo.svg";
 
 const FooterContainer = styled.div`
-  background: white;
+  background: var(--brown);
+  color: var(--white);
   text-align: center;
   border: solid 1px black;
   position: fixed;
   bottom: 0;
   width: 100%;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
 `;
 
 const ContactContainer = styled.div`
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
