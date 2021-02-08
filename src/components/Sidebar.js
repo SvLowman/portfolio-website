@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 import { Link } from "react-router-dom";
+import portrait from "../assets/portrait.jpg";
 
 const SidebarContainer = styled.div`
   border: solid 1px black;
@@ -8,12 +9,21 @@ const SidebarContainer = styled.div`
   width: 20%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   @media (orientation: portrait) {
     width: 100%;
     height: 10%;
     position: relative;
+  }
+`;
+
+const Portrait = styled.img`
+  width: 10rem;
+  border-radius: 100%;
+  @media (orientation: portrait) {
+    display: none;
   }
 `;
 
@@ -36,6 +46,7 @@ const LinkButton = styled.button`
 
 const Sidebar = () => (
   <SidebarContainer>
+    <Portrait src={portrait} alt="Portrait" />
     <LinkButtonContainer>
       <Link to="/">
         <LinkButton>🌍 Landing Page</LinkButton>

@@ -8,6 +8,15 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
 }
 
+:root {
+  --midnightblue: #151420;
+  --darkgrey: #292929;
+  --brown: #3c312f;
+  --grey: #585858;
+  --lightgrey: #d5d5d5;
+  --white: #f9f9f9;
+}
+
 body {
   margin: 0;
   font-size: 16px;
