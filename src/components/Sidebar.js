@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { Link } from "react-router-dom";
-import portrait from "../assets/portrait.jpg";
+import { Link, useLocation } from "react-router-dom";
+import portrait from "../assets/portrait-copy.jpg";
 import globe from "../assets/sidebar/emoji-weltkarte.png";
 import construction from "../assets/sidebar/emoji-baustelle.png";
 import cutlery from "../assets/sidebar/emoji-besteck.png";
@@ -48,9 +48,10 @@ const LinkButtonContainer = styled.div`
 `;
 
 const LinkButton = styled.button`
-  border: solid 1px var(--white);
+  border: ${(props) =>
+    props.active ? "solid 1px #329eab" : "solid 1px var(--white)"};
   border-radius: 25px;
-  color: var(--white);
+  color: ${(props) => (props.active ? "#329eab" : "var(--white)")};
   letter-spacing: 0.2rem;
   background: transparent;
   padding: 1rem;
@@ -66,32 +67,35 @@ const LinkButtonImage = styled.img`
   margin-right: 1rem;
 `;
 
-const Sidebar = () => (
-  <SidebarContainer>
-    <Portrait src={portrait} alt="Portrait" />
-    <LinkButtonContainer>
-      <Link to="/">
-        <LinkButton>
-          <LinkButtonImage src={globe} alt="Übersicht" /> Landing Page
-        </LinkButton>
-      </Link>
-      <Link to="/projects">
-        <LinkButton>
-          <LinkButtonImage src={construction} alt="Projekte" /> Projekte
-        </LinkButton>
-      </Link>
-      <Link to="/techstack">
-        <LinkButton>
-          <LinkButtonImage src={cutlery} alt="TechStack" /> Techstack
-        </LinkButton>
-      </Link>
-      <Link to="/cv">
-        <LinkButton>
-          <LinkButtonImage src={ski} alt="CV" /> CV
-        </LinkButton>
-      </Link>
-    </LinkButtonContainer>
-  </SidebarContainer>
-);
+const Sidebar = () => {
+  const location = useLocation();
+  return (
+    <SidebarContainer>
+      <Portrait src={portrait} alt="Portrait" />
+      <LinkButtonContainer>
+        <Link to="/">
+          <LinkButton active={location.pathname === "/"}>
+            <LinkButtonImage src={globe} alt="Übersicht" /> Landing Page
+          </LinkButton>
+        </Link>
+        <Link to="/projects">
+          <LinkButton active={location.pathname === "/projects"}>
+            <LinkButtonImage src={construction} alt="Projekte" /> Projekte
+          </LinkButton>
+        </Link>
+        <Link to="/techstack">
+          <LinkButton active={location.pathname === "/techstack"}>
+            <LinkButtonImage src={cutlery} alt="TechStack" /> Techstack
+          </LinkButton>
+        </Link>
+        <Link to="/cv">
+          <LinkButton active={location.pathname === "/cv"}>
+            <LinkButtonImage src={ski} alt="CV" /> CV
+          </LinkButton>
+        </Link>
+      </LinkButtonContainer>
+    </SidebarContainer>
+  );
+};
 
 export default Sidebar;

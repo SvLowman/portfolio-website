@@ -23,6 +23,10 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
+
+a {
+  text-decoration: none;
+}
 `;
 
 // font-family: 'Montserrat', sans-serif;
