@@ -2,15 +2,20 @@ import React from "react";
 import styled from "styled-components/macro";
 import { Link } from "react-router-dom";
 import portrait from "../assets/portrait.jpg";
+import globe from "../assets/sidebar/emoji-weltkarte.png";
+import construction from "../assets/sidebar/emoji-baustelle.png";
+import cutlery from "../assets/sidebar/emoji-besteck.png";
+import ski from "../assets/sidebar/emoji-ski.png";
 
 const SidebarContainer = styled.div`
+  background: var(--brown);
   border: solid 1px black;
   position: fixed;
   width: 20%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   @media (orientation: portrait) {
     width: 100%;
@@ -22,6 +27,7 @@ const SidebarContainer = styled.div`
 const Portrait = styled.img`
   width: 10rem;
   border-radius: 100%;
+  margin: 1rem;
   @media (orientation: portrait) {
     display: none;
   }
@@ -29,6 +35,7 @@ const Portrait = styled.img`
 
 const LinkButtonContainer = styled.div`
   border: solid 1px black;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -41,7 +48,22 @@ const LinkButtonContainer = styled.div`
 `;
 
 const LinkButton = styled.button`
-  border: solid 1px black;
+  border: solid 1px var(--white);
+  border-radius: 25px;
+  color: var(--white);
+  letter-spacing: 0.2rem;
+  background: transparent;
+  padding: 1rem;
+  margin: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+`;
+
+const LinkButtonImage = styled.img`
+  width: 1rem;
+  margin-right: 1rem;
 `;
 
 const Sidebar = () => (
@@ -49,16 +71,24 @@ const Sidebar = () => (
     <Portrait src={portrait} alt="Portrait" />
     <LinkButtonContainer>
       <Link to="/">
-        <LinkButton>🌍 Landing Page</LinkButton>
+        <LinkButton>
+          <LinkButtonImage src={globe} alt="Übersicht" /> Landing Page
+        </LinkButton>
       </Link>
       <Link to="/projects">
-        <LinkButton>🏗 Projekte</LinkButton>
+        <LinkButton>
+          <LinkButtonImage src={construction} alt="Projekte" /> Projekte
+        </LinkButton>
       </Link>
       <Link to="/techstack">
-        <LinkButton>🛠 Techstack</LinkButton>
+        <LinkButton>
+          <LinkButtonImage src={cutlery} alt="TechStack" /> Techstack
+        </LinkButton>
       </Link>
       <Link to="/cv">
-        <LinkButton>🧶 CV</LinkButton>
+        <LinkButton>
+          <LinkButtonImage src={ski} alt="CV" /> CV
+        </LinkButton>
       </Link>
     </LinkButtonContainer>
   </SidebarContainer>
