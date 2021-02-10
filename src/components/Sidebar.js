@@ -50,14 +50,7 @@ const LinkButtonContainer = styled.div`
 const LinkButton = styled.button`
   border: ${(props) =>
     props.active ? "solid 1px #329eab" : "solid 1px var(--white)"};
-  border-radius: 25px;
   color: ${(props) => (props.active ? "#329eab" : "var(--white)")};
-  letter-spacing: 0.2rem;
-  background: transparent;
-  padding: 1rem;
-  margin: 0.5rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
   display: flex;
   align-items: center;
 `;

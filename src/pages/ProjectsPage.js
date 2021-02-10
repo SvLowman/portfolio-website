@@ -5,10 +5,14 @@ import { projectsContent } from "../content/content";
 
 const ProjectCard = styled.div`
   border: solid 1px black;
+  border-radius: 25px;
+  background: var(--white);
+  margin: 1.5rem 3rem;
   display: flex;
 `;
 const ImageContainer = styled.div`
   border: solid 1px black;
+  padding: 1rem;
   img {
     width: 10rem;
   }
@@ -16,19 +20,40 @@ const ImageContainer = styled.div`
 
 const DescriptionContainer = styled.div`
   border: solid 1px black;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  p {
-    margin: 0;
-  }
+  height: 100%;
 `;
 
 const Title = styled.p`
   border: solid 1px black;
+  color: var(--midnightblue);
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0 0 1rem;
+`;
+
+const ParagraphsContainer = styled.div`
+  margin-bottom: 1rem;
+`;
+
+const Paragraphs = styled.p`
+  border: solid 1px black;
+  color: var(--midnightblue);
+  margin: 0;
 `;
 
 const ButtonContainer = styled.div`
   border: solid 1px black;
+  display: flex;
+  justify-content: flex-end;
+`;
+
+const ProjectButton = styled.button`
+  border: solid 1px var(--white);
+  color: var(--white);
+  background: #329eab;
 `;
 
 const ProjectsPage = () => (
@@ -45,17 +70,17 @@ const ProjectsPage = () => (
           </ImageContainer>
           <DescriptionContainer>
             <Title>{object.title}</Title>
-            <div>
+            <ParagraphsContainer>
               {object.description.map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
+                <Paragraphs key={index}>{paragraph}</Paragraphs>
               ))}
-            </div>
+            </ParagraphsContainer>
             <ButtonContainer>
               <a href={object.deploymentLink}>
-                <button>Zum Deployment</button>
+                <ProjectButton active={onclick}>Zum Deployment</ProjectButton>
               </a>
               <a href={object.repoLink}>
-                <button>Zum Repo</button>
+                <ProjectButton>Zum Repo</ProjectButton>
               </a>
             </ButtonContainer>
           </DescriptionContainer>
