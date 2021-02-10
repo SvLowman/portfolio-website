@@ -1,20 +1,25 @@
 import React from "react";
 import styled from "styled-components/macro";
-import email from "../assets/email.svg";
-import githublogo from "../assets/github-logo.svg";
-import linkedinlogo from "../assets/linkedin-logo.svg";
-import neuefischelogo from "../assets/neuefische-logo.svg";
+import email from "../assets/footer/email.svg";
+import githublogo from "../assets/footer/github-logo.svg";
+import linkedinlogo from "../assets/footer/linkedin-logo.svg";
+import neuefischelogo from "../assets/footer/neuefische-logo.svg";
 
 const FooterContainer = styled.div`
-  background: white;
+  background: var(--brown);
+  color: var(--white);
   text-align: center;
   border: solid 1px black;
   position: fixed;
   bottom: 0;
   width: 100%;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
 `;
 
 const ContactContainer = styled.div`
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
