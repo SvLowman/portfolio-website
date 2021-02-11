@@ -23,3 +23,12 @@ export const TextContainer = styled.div`
     text-align: center;
   }
 `;
+
+export const Title = styled.p`
+  border-bottom: solid 1px black;
+  color: var(--midnightblue);
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0 0 1rem;
+  padding: 0 0 0.2rem;
+`;

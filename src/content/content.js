@@ -92,7 +92,7 @@ export const cvContent = [
     company: "Sächsische Lehmbaugruppe, Leipzig",
     period: "02 / 2019 - 08 / 2020",
     tasks: [
-      "Planung und Durchführung von Unterricht in Grundbildungsfächern für die Teilnehmer an einem Schulersatzprojekt",
+      "Planung und Durchführung von Unterricht in Grundbildungsfächern an einem Schulersatzprojekt",
     ],
   },
   {

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { Container, TextContainer } from "../components/Container";
+import { Container, TextContainer, Title } from "../components/Container";
 import { projectsContent } from "../content/content";
 
 const ProjectCard = styled.div`
@@ -22,15 +22,6 @@ const DescriptionContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   min-height: 100%;
-`;
-
-const Title = styled.p`
-  border-bottom: solid 1px black;
-  color: var(--midnightblue);
-  font-weight: 700;
-  font-size: 1.2rem;
-  margin: 0 0 1rem;
-  padding: 0 0 0.2rem;
 `;
 
 const ParagraphsContainer = styled.div`
