@@ -4,14 +4,12 @@ import { Container, TextContainer } from "../components/Container";
 import { projectsContent } from "../content/content";
 
 const ProjectCard = styled.div`
-  border: solid 1px black;
   border-radius: 25px;
   background: var(--white);
   margin: 1.5rem 3rem;
   display: flex;
 `;
 const ImageContainer = styled.div`
-  border: solid 1px black;
   padding: 1rem;
   img {
     width: 10rem;
@@ -19,19 +17,20 @@ const ImageContainer = styled.div`
 `;
 
 const DescriptionContainer = styled.div`
-  border: solid 1px black;
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  justify-content: space-between;
+  min-height: 100%;
 `;
 
 const Title = styled.p`
-  border: solid 1px black;
+  border-bottom: solid 1px black;
   color: var(--midnightblue);
   font-weight: 700;
   font-size: 1.2rem;
   margin: 0 0 1rem;
+  padding: 0 0 0.2rem;
 `;
 
 const ParagraphsContainer = styled.div`
@@ -39,13 +38,11 @@ const ParagraphsContainer = styled.div`
 `;
 
 const Paragraphs = styled.p`
-  border: solid 1px black;
   color: var(--midnightblue);
-  margin: 0;
+  margin: 0.3rem 0;
 `;
 
 const ButtonContainer = styled.div`
-  border: solid 1px black;
   display: flex;
   justify-content: flex-end;
 `;
@@ -69,15 +66,17 @@ const ProjectsPage = () => (
             <img src={object.src} alt={object.alt} />
           </ImageContainer>
           <DescriptionContainer>
-            <Title>{object.title}</Title>
-            <ParagraphsContainer>
-              {object.description.map((paragraph, index) => (
-                <Paragraphs key={index}>{paragraph}</Paragraphs>
-              ))}
-            </ParagraphsContainer>
+            <div>
+              <Title>{object.title}</Title>
+              <ParagraphsContainer>
+                {object.description.map((paragraph, index) => (
+                  <Paragraphs key={index}>{paragraph}</Paragraphs>
+                ))}
+              </ParagraphsContainer>
+            </div>
             <ButtonContainer>
               <a href={object.deploymentLink}>
-                <ProjectButton active={onclick}>Zum Deployment</ProjectButton>
+                <ProjectButton>Zum Deployment</ProjectButton>
               </a>
               <a href={object.repoLink}>
                 <ProjectButton>Zum Repo</ProjectButton>

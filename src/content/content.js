@@ -16,7 +16,7 @@ export const projectsContent = [
     alt: "TagTrace",
     title: "TagTrace",
     description: [
-      "Beim Anschauen von Bildern sind wir üblicherweise an die Struktur der Ordner gebunden, in denen sie abgelegt sind. Mithilfe von 'TagTrace' kann der User seine eigene Bildersammlung zusammenstellen, die Bilder mit Tags versehen und dann unabhängig von starren Ordnerstrukturen durchklicken.",
+      "Mithilfe von 'TagTrace' kann der User seine eigene Bildersammlung zusammenstellen, die Bilder mit Tags versehen und dann unabhängig von starren Ordnerstrukturen durchklicken.",
       "Die Bilder werden auf Cloudinary hochgeladen, die weiteren Daten in einer Collection auf MongoDB abgelegt. Die Benutzeroberfläche ist mit React programmiert.",
       "Die Tags kann der Betrachter anschließend wie Spuren durch die Sammlung verfolgen. Jedes Bild wird so zu einem thematischen Knotenpunkt, Bilder anschauen zu einer Wanderung durch ein rhizomartiges Gewebe von assoziativen Querverweisen.",
     ],
