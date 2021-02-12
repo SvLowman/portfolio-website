@@ -18,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 body {
+  background: var(--midnightblue);
   margin: 0;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
@@ -26,6 +27,16 @@ body {
 
 a {
   text-decoration: none;
+}
+
+button {
+  border-radius: 25px;
+  letter-spacing: 0.2rem;
+  background: transparent;
+  padding: 1rem;
+  margin: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 `;
 

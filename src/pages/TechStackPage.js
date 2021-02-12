@@ -4,7 +4,6 @@ import { Container, TextContainer } from "../components/Container";
 import { techStackContent } from "../content/content";
 
 const TechStackContainer = styled.div`
-  border: solid 1px black;
   width: 50%;
   display: flex;
   flex-wrap: wrap;
@@ -12,7 +11,8 @@ const TechStackContainer = styled.div`
 `;
 
 const TechStackCard = styled.div`
-  border: solid 1px black;
+  border-radius: 25px;
+  background: var(--white);
   width: 30%;
   margin: 1.5%;
   padding: 1.5%;
@@ -21,12 +21,10 @@ const TechStackCard = styled.div`
   justify-content: flex-start;
   align-items: center;
   img {
-    border: solid 1px black;
     width: 100%;
     margin-bottom: 1rem;
   }
   div {
-    border: solid 1px black;
     width: 100%;
     height: 100;
     display: flex;
@@ -34,8 +32,9 @@ const TechStackCard = styled.div`
     align-items: center;
     margin: auto 0;
     p {
-      border: solid 1px black;
-      margin: 0;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      margin: 0 0 1rem;
     }
   }
 `;

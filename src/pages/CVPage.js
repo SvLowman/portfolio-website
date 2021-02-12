@@ -1,18 +1,25 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { Container, TextContainer } from "../components/Container";
+import { Container, TextContainer, Title } from "../components/Container";
 import { cvContent } from "../content/content";
 
 const CVContainer = styled.div`
-  border: solid 1px black;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 `;
 
 const CVCard = styled.div`
-  border: solid 1px black;
+  border-radius: 25px;
+  background: var(--white);
+  padding: 1rem;
+  margin: 1.5rem 3rem;
   width: fit-content;
+`;
+
+const CompanyName = styled.p`
+  font-weight: 500;
+  letter-spacing: 0.2rem;
 `;
 
 const CVPage = () => (
@@ -23,8 +30,8 @@ const CVPage = () => (
     <CVContainer>
       {cvContent.map((object, index) => (
         <CVCard key={index}>
-          <p>{object.position}</p>
-          <p>{object.company}</p>
+          <Title>{object.position}</Title>
+          <CompanyName>{object.company}</CompanyName>
           <p>{object.period}</p>
           <ul>
             {object.tasks.map((item, index) => (

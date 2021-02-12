@@ -14,9 +14,21 @@ export const Container = styled.div`
 `;
 
 export const TextContainer = styled.div`
-  border: solid 1px black;
   width: 50%;
+  color: var(--white);
   @media (orientation: portrait) {
     width: 75%;
   }
+  h3 {
+    text-align: center;
+  }
+`;
+
+export const Title = styled.p`
+  border-bottom: solid 1px black;
+  color: var(--midnightblue);
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0 0 1rem;
+  padding: 0 0 0.2rem;
 `;
