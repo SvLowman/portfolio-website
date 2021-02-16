@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import styled from "styled-components/macro";
 import GlobalStyle from "./globalStyles";
@@ -20,6 +20,12 @@ const Main = styled.main`
 `;
 
 function App() {
+  const [splash, setSplash] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setSplash(false), 4000);
+  }, []);
+
   return (
     <div className="App">
       <Router>
@@ -29,13 +35,10 @@ function App() {
           <Sidebar />
           <Switch>
             <Route exact path="/">
-              <LandingPage />
+              {splash ? <LandingPage /> : <ProjectsPage />}
             </Route>
             <Route path="/techstack">
               <TechStackPage />
-            </Route>
-            <Route path="/projects">
-              <ProjectsPage />
             </Route>
             <Route path="/cv">
               <CVPage />

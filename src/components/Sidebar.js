@@ -71,8 +71,8 @@ const Sidebar = () => {
             <LinkButtonImage src={globe} alt="Übersicht" /> Landing Page
           </LinkButton>
         </Link>
-        <Link to="/projects">
-          <LinkButton active={location.pathname === "/projects"}>
+        <Link to="/">
+          <LinkButton active={location.pathname === "/"}>
             <LinkButtonImage src={construction} alt="Projekte" /> Projekte
           </LinkButton>
         </Link>
