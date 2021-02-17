@@ -5,11 +5,7 @@ import { Container, TextContainer } from "../components/Container";
 const LandingPage = () => (
   <Container>
     <TextContainer>
-      <h3>Hello World 😀!</h3>
-      <p>
-        Hier auf meiner Portfolio-Seite findet sich ein kleiner Überblick über
-        bisherige Projekte und Qualifikationen.
-      </p>
+      <h3>😀</h3>
     </TextContainer>
   </Container>
 );

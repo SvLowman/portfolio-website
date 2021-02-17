@@ -20,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
 body {
   background: var(--midnightblue);
   margin: 0;
+  min-height: 100%;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
