@@ -11,24 +11,51 @@ const HeaderContainer = styled.div`
   top: 0;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  h1 {
-    font-weight: 700;
-  }
-  h2 {
-    font-weight: 500;
-    letter-spacing: 0.4rem;
-  }
   @media (orientation: portrait) {
     position: relative;
   }
 `;
 
+const TitleContainer = styled.div`
+  display: flex;
+  align-items: center;
+  h1 {
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  h2 {
+    font-weight: 500;
+    letter-spacing: 0.4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    @media (orientation: portrait) {
+      margin-top: 0;
+    }
+  }
+  @media (orientation: portrait) {
+    flex-direction: column;
+  }
+  @media (max-width: 475px) {
+    font-size: small;
+  }
+`;
+
+const HidingH2 = styled.h2`
+  @media (orientation: portrait) {
+    display: none;
+  }
+`;
+
 const Header = () => (
   <HeaderContainer>
-    <h1>SVEN LOHMANN</h1>
-    <h2>WEB DEVELOPMENT</h2>
+    <TitleContainer>
+      <h1>SVEN LOHMANN</h1>
+      <HidingH2>•</HidingH2>
+      <h2>WEB DEVELOPMENT</h2>
+    </TitleContainer>
   </HeaderContainer>
 );
 

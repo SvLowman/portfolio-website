@@ -28,6 +28,12 @@ const ContactContainer = styled.div`
     margin: 0.5rem;
     filter: invert(64%) sepia(8%) saturate(2110%) hue-rotate(143deg)
       brightness(88%) contrast(81%);
+    @media (max-width: 475px) {
+      width: 2rem;
+    }
+    @media (max-width: 350px) {
+      width: 1.5rem;
+    }
   }
 `;
 
