@@ -6,7 +6,7 @@ import { projectsContent } from "../content/content";
 const ProjectCard = styled.div`
   border-radius: 25px;
   background: var(--white);
-  margin: 1.5rem 3rem;
+  margin: 1.5rem 0;
   display: flex;
 `;
 const ImageContainer = styled.div`
