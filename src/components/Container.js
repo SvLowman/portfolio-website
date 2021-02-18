@@ -2,8 +2,7 @@ import styled from "styled-components/macro";
 
 export const Container = styled.div`
   grid-column: 2;
-  padding-top: 6rem;
-  padding-bottom: 4rem;
+  padding: 6rem 6rem 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
