@@ -7,35 +7,51 @@ const ProjectCard = styled.div`
   border-radius: 25px;
   background: var(--white);
   margin: 1.5rem 0;
+  max-width: 100%;
   display: flex;
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
 `;
 const ImageContainer = styled.div`
   padding: 1rem;
   img {
     width: 10rem;
   }
+  @media (max-width: 600px) {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 const DescriptionContainer = styled.div`
-  padding: 1rem;
+  padding: 1rem 2rem 1rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100%;
+  @media (max-width: 600px) {
+    padding: 1rem;
+  }
 `;
 
 const ParagraphsContainer = styled.div`
   margin-bottom: 1rem;
+  @media (min-width: 1300px) {
+    columns: 2;
+    column-gap: 3rem;
+  }
 `;
 
 const Paragraphs = styled.p`
   color: var(--midnightblue);
-  margin: 0.3rem 0;
+  margin: 0.4rem 0;
 `;
 
 const ButtonContainer = styled.div`
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
 `;
 
 const ProjectButton = styled.button`
@@ -48,8 +64,7 @@ const ProjectsPage = () => (
   <>
     <Container>
       <TextContainer>
-        <h3>Die Projekte</h3>
-        <p>Bislang entwickelt und deployt:</p>
+        <h3>Bislang entwickelt und deployt:</h3>
       </TextContainer>
       {projectsContent.map((object, index) => (
         <ProjectCard key={index}>
