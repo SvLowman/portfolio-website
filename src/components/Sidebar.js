@@ -66,7 +66,7 @@ const LinkButtonImage = styled.img`
   width: 1rem;
   margin-right: 1rem;
   @media (orientation: portrait) and (max-width: 475px) {
-    margin: 0 1rem;
+    margin: 0;
   }
 `;
 

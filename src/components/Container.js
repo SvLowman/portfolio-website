@@ -2,12 +2,18 @@ import styled from "styled-components/macro";
 
 export const Container = styled.div`
   grid-column: 2;
-  padding: 6rem 6rem 4rem;
+  padding: 7rem 6rem 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   @media (orientation: portrait) {
     padding-top: 1rem;
+  }
+  @media (max-width: 600px) {
+    padding: 3rem 3rem 4rem;
+  }
+  @media (max-width: 500px) {
+    padding: 1rem 1rem 4rem;
   }
 `;
 
@@ -16,6 +22,9 @@ export const TextContainer = styled.div`
   color: var(--white);
   @media (orientation: portrait) {
     width: 75%;
+  }
+  @media (max-width: 500px) {
+    width: 90%;
   }
   h3 {
     text-align: center;

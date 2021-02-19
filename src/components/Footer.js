@@ -13,7 +13,8 @@ const FooterContainer = styled.div`
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 4.5rem;
+  height: fit-content;
+  min-height: 4.5rem;
   display: flex;
   align-items: center;
 `;
@@ -23,15 +24,16 @@ const ContactContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   img {
     width: 2.5rem;
-    margin: 0.5rem;
+    margin: 0.5rem 1rem;
     filter: invert(64%) sepia(8%) saturate(2110%) hue-rotate(143deg)
       brightness(88%) contrast(81%);
     @media (max-width: 475px) {
       width: 2rem;
     }
-    @media (max-width: 350px) {
+    @media (max-width: 300px) {
       width: 1.5rem;
     }
   }

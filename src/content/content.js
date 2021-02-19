@@ -4,7 +4,7 @@ import html5logo from "../assets/techstack-logos/html5.png";
 import css3logo from "../assets/techstack-logos/css3.png";
 import javascriptlogo from "../assets/techstack-logos/javascript.png";
 import reactlogo from "../assets/techstack-logos/react.png";
-import styledcomponentslogo from "../assets/techstack-logos/styled-components.jpg";
+import styledcomponentslogo from "../assets/techstack-logos/styled-components.png";
 import nodejslogo from "../assets/techstack-logos/nodejs.png";
 import mongodblogo from "../assets/techstack-logos/mongodb.png";
 import vsclogo from "../assets/techstack-logos/vsc.png";
