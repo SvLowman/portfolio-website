@@ -4,7 +4,7 @@ import { Container, TextContainer } from "../components/Container";
 import { techStackContent } from "../content/content";
 
 const TechStackContainer = styled.div`
-  width: 50%;
+  width: 70%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -20,6 +20,12 @@ const TechStackCard = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+  @media (max-width: 1000px) and (min-width: 500px) {
+    width: 47%;
+  }
   img {
     width: 100%;
     margin-bottom: 1rem;
@@ -34,6 +40,7 @@ const TechStackCard = styled.div`
     p {
       font-family: "Montserrat", sans-serif;
       font-weight: 700;
+      text-align: center;
       margin: 0 0 1rem;
     }
   }
