@@ -9,12 +9,18 @@ const HeaderContainer = styled.div`
   position: fixed;
   z-index: 1;
   top: 0;
-  width: 100%;
+  right: 0;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   @media (orientation: portrait) {
+    width: 100%;
+    height: fit-content;
     position: relative;
+  }
+  @media (orientation: landscape) and (max-width: 1000px) {
+    width: 75%;
   }
 `;
 
@@ -25,12 +31,20 @@ const TitleContainer = styled.div`
     font-weight: 700;
     margin-left: 2rem;
     margin-right: 2rem;
+    @media (orientation: landscape) and (max-width: 900px) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
   }
   h2 {
     font-weight: 500;
     letter-spacing: 0.4rem;
     margin-left: 2rem;
     margin-right: 2rem;
+    @media (orientation: landscape) and (max-width: 900px) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
     @media (orientation: portrait) {
       margin-top: 0;
     }

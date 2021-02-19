@@ -5,6 +5,7 @@ import { techStackContent } from "../content/content";
 
 const TechStackContainer = styled.div`
   width: 70%;
+  margin-bottom: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
