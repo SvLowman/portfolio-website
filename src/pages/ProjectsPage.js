@@ -3,12 +3,43 @@ import styled from "styled-components/macro";
 import { Container, TextContainer, Title } from "../components/Container";
 import { projectsContent } from "../content/content";
 
+// const TestSquare = styled.div`
+//   background: white;
+//   height: 100px;
+//   width: 100px;
+//   margin: 50px;
+//   animation: shimmy 1s reverse;
+//   transition-timing-function: ease-out;
+//   transition: width 1s;
+//   @keyframes shimmy {
+//     0% {
+//       transform: translate(0, 0);
+//     }
+//     100% {
+//       transform: translate(calc(50vw + 50%));
+//     }
+//   }
+//   :hover {
+//     width: 300px;
+//   }
+// `;
+
 const ProjectCard = styled.div`
   border-radius: 25px;
   background: var(--white);
   margin: 1.5rem 0;
   max-width: 100%;
   display: flex;
+  animation: shimmy 1s reverse;
+  transition-timing-function: ease-out;
+  @keyframes shimmy {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(calc(50vw + 50%));
+    }
+  }
   @media (max-width: 700px) {
     flex-direction: column;
   }
@@ -66,6 +97,7 @@ const ProjectsPage = () => (
       <TextContainer>
         <h3>Bislang entwickelt und deployt:</h3>
       </TextContainer>
+      {/* <TestSquare /> */}
       {projectsContent.map((object, index) => (
         <ProjectCard key={index}>
           <ImageContainer>
