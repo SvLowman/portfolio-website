@@ -55,6 +55,10 @@ const LinkButton = styled.button`
   color: ${(props) => (props.active ? "#329eab" : "var(--white)")};
   display: flex;
   align-items: center;
+  transition: all 0.2s ease-in-out;
+  :hover {
+    transform: scale(1.1);
+  }
   @media (orientation: portrait) and (max-width: 475px) {
     span {
       display: none;
