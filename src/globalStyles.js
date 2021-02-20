@@ -23,7 +23,7 @@ body {
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  overflow: hidden;
+  overflow-x: hidden;
   max-width: 100vw; 
 }
 

@@ -30,9 +30,9 @@ const ProjectCard = styled.div`
   margin: 1.5rem 0;
   max-width: 100%;
   display: flex;
-  animation: shimmy 1s reverse;
+  animation: slide 1s reverse;
   transition-timing-function: ease-out;
-  @keyframes shimmy {
+  @keyframes slide {
     0% {
       transform: translate(0, 0);
     }

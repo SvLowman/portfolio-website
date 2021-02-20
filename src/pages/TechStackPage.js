@@ -9,6 +9,16 @@ const TechStackContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  animation: slide 1s reverse;
+  transition-timing-function: ease-out;
+  @keyframes slide {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(calc(50vw + 50%));
+    }
+  }
 `;
 
 const TechStackCard = styled.div`
