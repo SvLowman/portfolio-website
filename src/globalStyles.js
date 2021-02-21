@@ -39,6 +39,10 @@ button {
   margin: 0.5rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  :hover {
+    transform: scale(1.1);
+  }
 }
 `;
 

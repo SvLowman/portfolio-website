@@ -17,6 +17,16 @@ const FooterContainer = styled.div`
   min-height: 4.5rem;
   display: flex;
   align-items: center;
+  animation: slidefooter 2s reverse;
+  transition-timing-function: ease-out;
+  @keyframes slidefooter {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(calc(50vw + 50%));
+    }
+  }
 `;
 
 const ContactContainer = styled.div`
@@ -30,6 +40,10 @@ const ContactContainer = styled.div`
     margin: 0.5rem 1rem;
     filter: invert(64%) sepia(8%) saturate(2110%) hue-rotate(143deg)
       brightness(88%) contrast(81%);
+    transition: all 0.2s ease-in-out;
+    :hover {
+      transform: scale(1.1);
+    }
     @media (max-width: 475px) {
       width: 2rem;
     }

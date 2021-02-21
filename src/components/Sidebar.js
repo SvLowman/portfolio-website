@@ -15,6 +15,19 @@ const SidebarContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: slidesidebar 3s reverse;
+  transition-timing-function: ease-out;
+  @keyframes slidesidebar {
+    0% {
+      transform: translate(0, 0);
+    }
+    66% {
+      transform: translate(0, calc(50vh + 50%));
+    }
+    100% {
+      transform: translate(0, calc(50vh + 50%));
+    }
+  }
   @media (orientation: landscape) and (max-width: 1000px) {
     width: 25%;
   }
@@ -40,6 +53,18 @@ const LinkButtonContainer = styled.div`
   flex-direction: column;
   width: fit-content;
   height: fit-content;
+  animation: fadein 6s reverse;
+  @keyframes fadein {
+    0% {
+      opacity: 1;
+    }
+    33% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
   @media (orientation: portrait) {
     width: 100%;
     margin-top: 0;
@@ -55,10 +80,6 @@ const LinkButton = styled.button`
   color: ${(props) => (props.active ? "#329eab" : "var(--white)")};
   display: flex;
   align-items: center;
-  transition: all 0.2s ease-in-out;
-  :hover {
-    transform: scale(1.1);
-  }
   @media (orientation: portrait) and (max-width: 475px) {
     span {
       display: none;

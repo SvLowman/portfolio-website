@@ -28,6 +28,7 @@ export const TextContainer = styled.div`
   }
   h3 {
     text-align: center;
+    margin-bottom: 2rem;
   }
 `;
 
