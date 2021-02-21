@@ -4,7 +4,7 @@ import styled from "styled-components/macro";
 import GlobalStyle from "./globalStyles";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
-import LandingPage from "./pages/LandingPage";
+import SplashPage from "./pages/SplashPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import TechStackPage from "./pages/TechStackPage";
 import CVPage from "./pages/CVPage";
@@ -35,7 +35,7 @@ function App() {
           <Sidebar />
           <Switch>
             <Route exact path="/">
-              {splash ? <LandingPage /> : <ProjectsPage />}
+              {splash ? <SplashPage /> : <ProjectsPage />}
             </Route>
             <Route path="/techstack">
               <TechStackPage />
