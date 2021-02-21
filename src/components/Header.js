@@ -14,6 +14,20 @@ const HeaderContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: slideheader 4s reverse;
+  transition-timing-function: ease-out;
+  transition-delay: 2s;
+  @keyframes slideheader {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(calc(-50vw - 65%));
+    }
+    100% {
+      transform: translate(calc(-50vw - 65%));
+    }
+  }
   @media (orientation: portrait) {
     width: 100%;
     height: fit-content;

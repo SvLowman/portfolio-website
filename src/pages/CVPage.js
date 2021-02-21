@@ -15,6 +15,16 @@ const CVCard = styled.div`
   padding: 2rem 3rem 2rem;
   margin: 1.5rem 0 1.5rem 3rem;
   width: fit-content;
+  animation: slide 1s reverse;
+  transition-timing-function: ease-out;
+  @keyframes slide {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(calc(50vw + 50%));
+    }
+  }
   @media (max-width: 600px) {
     padding: 2rem;
   }

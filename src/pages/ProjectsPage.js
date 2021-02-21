@@ -9,6 +9,16 @@ const ProjectCard = styled.div`
   margin: 1.5rem 0;
   max-width: 100%;
   display: flex;
+  animation: slide 1s reverse;
+  transition-timing-function: ease-out;
+  @keyframes slide {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(calc(50vw + 50%));
+    }
+  }
   @media (max-width: 700px) {
     flex-direction: column;
   }
@@ -66,6 +76,7 @@ const ProjectsPage = () => (
       <TextContainer>
         <h3>Bislang entwickelt und deployt:</h3>
       </TextContainer>
+      {/* <TestSquare /> */}
       {projectsContent.map((object, index) => (
         <ProjectCard key={index}>
           <ImageContainer>
