@@ -6,7 +6,7 @@ import linkedinlogo from "../assets/footer/linkedin-logo.svg";
 import neuefischelogo from "../assets/footer/neuefische-logo.svg";
 
 const FooterContainer = styled.div`
-  background: var(--bars);
+  background: linear-gradient(160deg, var(--bars), var(--bars-gradient));
   color: var(--lighttext);
   text-align: center;
   border: solid 1px black;

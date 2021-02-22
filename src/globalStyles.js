@@ -15,17 +15,18 @@ const GlobalStyle = createGlobalStyle`
   --bars: #3c312f;
   --bars-gradient: #453431;
   --bars-shade: #302827;
-  --darktext: #292929;
   --lighttext: #f9f9f9;
   --lighttext-gradient: #ebe6e6;
+  --lighttext-shade: #cccccc;
   --buttoncolor: #329eab;
   --buttoncolor-gradient: #3286ab; //maybe also disputable: #32aba0
+  --darktext: #292929;
   --grey: #585858;
   --lightgrey: #d5d5d5;
 }
 
 body {
-  background: var(--background);
+  background: linear-gradient(160deg, var(--background-gradient), var(--background));
   margin: 0;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;

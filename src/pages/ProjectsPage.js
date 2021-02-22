@@ -5,7 +5,11 @@ import { projectsContent } from "../content/content";
 
 const ProjectCard = styled.div`
   border-radius: 25px;
-  background: var(--lighttext);
+  background: linear-gradient(
+    160deg,
+    var(--lighttext),
+    var(--lighttext-gradient)
+  );
   margin: 1.5rem 0;
   max-width: 100%;
   display: flex;
@@ -68,9 +72,13 @@ const ButtonContainer = styled.div`
 `;
 
 const ProjectButton = styled.button`
-  border: solid 1px var(--lighttext);
+  border: solid 1px var(--buttoncolor-gradient);
   color: var(--lighttext);
-  background: #329eab;
+  background: linear-gradient(
+    160deg,
+    var(--buttoncolor),
+    var(--buttoncolor-gradient)
+  );
 `;
 
 const ProjectsPage = () => (

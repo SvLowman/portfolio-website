@@ -7,7 +7,7 @@ import cutlery from "../assets/sidebar/emoji-besteck.png";
 import rollercoaster from "../assets/sidebar/emoji-achterbahn.png";
 
 const SidebarContainer = styled.div`
-  background: var(--bars);
+  background: linear-gradient(160deg, var(--bars-gradient), var(--bars));
   position: fixed;
   width: 20%;
   height: 100%;

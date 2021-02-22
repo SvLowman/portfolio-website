@@ -23,7 +23,11 @@ const TechStackContainer = styled.div`
 
 const TechStackCard = styled.div`
   border-radius: 25px;
-  background: var(--lightext);
+  background: linear-gradient(
+    160deg,
+    var(--lighttext),
+    var(--lighttext-gradient)
+  );
   width: 30%;
   margin: 1.5%;
   padding: 1.5%;
