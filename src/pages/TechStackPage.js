@@ -31,6 +31,7 @@ const TechStackCard = styled.div`
   width: 30%;
   margin: 1.5%;
   padding: 1.5%;
+  box-shadow: 5px 5px 20px var(--background-shade);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -44,6 +45,7 @@ const TechStackCard = styled.div`
   img {
     width: 100%;
     margin-bottom: 1rem;
+    box-shadow: 5px 5px 20px var(--lighttext-shade);
   }
   div {
     width: 100%;

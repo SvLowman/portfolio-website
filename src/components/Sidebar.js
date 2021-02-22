@@ -54,6 +54,7 @@ const Portrait = styled.img`
   width: 4rem;
   border-radius: 100%;
   margin: 1rem;
+  box-shadow: 5px 5px 20px var(--bars-shade);
   @media (orientation: portrait) {
     display: none;
   }
@@ -93,6 +94,7 @@ const LinkButton = styled.button`
   color: ${(props) =>
     props.active ? "var(--buttoncolor)" : "var(--lighttext)"};
   margin: 1rem 0.5rem;
+  box-shadow: 5px 5px 20px var(--bars-shade);
   display: flex;
   align-items: center;
   @media (orientation: portrait) and (max-width: 475px) {

@@ -12,6 +12,7 @@ const ProjectCard = styled.div`
   );
   margin: 1.5rem 0;
   max-width: 100%;
+  box-shadow: 5px 5px 20px var(--background-shade);
   display: flex;
   animation: slide 1s reverse;
   transition-timing-function: ease-out;
@@ -34,6 +35,7 @@ const ImageContainer = styled.div`
   padding: 1rem;
   img {
     width: 10rem;
+    box-shadow: 5px 5px 20px var(--lighttext-shade);
   }
   @media (max-width: 600px) {
     display: flex;
@@ -79,6 +81,7 @@ const ProjectButton = styled.button`
     var(--buttoncolor),
     var(--buttoncolor-gradient)
   );
+  box-shadow: 5px 5px 20px var(--lighttext-shade);
 `;
 
 const ProjectsPage = () => (
