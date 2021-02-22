@@ -10,10 +10,16 @@ const GlobalStyle = createGlobalStyle`
 
 :root {
   --background: #151420;
+  --background-gradient: #19172b; //also nice: #1b1a29
+  --background-shade: #0e0e16;
   --bars: #3c312f;
+  --bars-gradient: #453431;
+  --bars-shade: #302827;
   --darktext: #292929;
   --lighttext: #f9f9f9;
+  --lighttext-gradient: #ebe6e6;
   --buttoncolor: #329eab;
+  --buttoncolor-gradient: #3286ab; //maybe also disputable: #32aba0
   --grey: #585858;
   --lightgrey: #d5d5d5;
 }
