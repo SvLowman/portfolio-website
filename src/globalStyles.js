@@ -9,16 +9,24 @@ const GlobalStyle = createGlobalStyle`
 }
 
 :root {
-  --midnightblue: #151420;
-  --darkgrey: #292929;
-  --brown: #3c312f;
+  --background: #151420;
+  --background-gradient: #19172b; //also nice: #1b1a29
+  --background-shade: #0e0e16;
+  --bars: #3c312f;
+  --bars-gradient: #453431;
+  --bars-shade: #302827;
+  --lighttext: #f9f9f9;
+  --lighttext-gradient: #ebe6e6;
+  --lighttext-shade: #cccccc;
+  --buttoncolor: #329eab;
+  --buttoncolor-gradient: #3286ab; //maybe also disputable: #32aba0
+  --darktext: #292929;
   --grey: #585858;
   --lightgrey: #d5d5d5;
-  --white: #f9f9f9;
 }
 
 body {
-  background: var(--midnightblue);
+  background: linear-gradient(160deg, var(--background-gradient), var(--background));
   margin: 0;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
@@ -36,7 +44,7 @@ button {
   letter-spacing: 0.2rem;
   background: transparent;
   padding: 1rem;
-  margin: 0.5rem;
+  margin: 1rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   transition: all 0.2s ease-in-out;

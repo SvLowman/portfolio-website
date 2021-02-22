@@ -23,10 +23,15 @@ const TechStackContainer = styled.div`
 
 const TechStackCard = styled.div`
   border-radius: 25px;
-  background: var(--white);
+  background: linear-gradient(
+    160deg,
+    var(--lighttext),
+    var(--lighttext-gradient)
+  );
   width: 30%;
   margin: 1.5%;
   padding: 1.5%;
+  box-shadow: 5px 5px 20px var(--background-shade);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -40,6 +45,7 @@ const TechStackCard = styled.div`
   img {
     width: 100%;
     margin-bottom: 1rem;
+    box-shadow: 5px 5px 20px var(--lighttext-shade);
   }
   div {
     width: 100%;
@@ -49,6 +55,7 @@ const TechStackCard = styled.div`
     align-items: center;
     margin: auto 0;
     p {
+      color: var(--background);
       font-family: "Montserrat", sans-serif;
       font-weight: 700;
       text-align: center;

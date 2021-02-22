@@ -5,12 +5,20 @@ import { projectsContent } from "../content/content";
 
 const ProjectCard = styled.div`
   border-radius: 25px;
-  background: var(--white);
+  background: linear-gradient(
+    160deg,
+    var(--lighttext),
+    var(--lighttext-gradient)
+  );
   margin: 1.5rem 0;
   max-width: 100%;
+  box-shadow: 5px 5px 20px var(--background-shade);
   display: flex;
   animation: slide 1s reverse;
   transition-timing-function: ease-out;
+  :nth-child(3) {
+    transition-delay: 1s;
+  }
   @keyframes slide {
     0% {
       transform: translate(0, 0);
@@ -27,6 +35,7 @@ const ImageContainer = styled.div`
   padding: 1rem;
   img {
     width: 10rem;
+    box-shadow: 5px 5px 20px var(--lighttext-shade);
   }
   @media (max-width: 600px) {
     display: flex;
@@ -54,7 +63,7 @@ const ParagraphsContainer = styled.div`
 `;
 
 const Paragraphs = styled.p`
-  color: var(--midnightblue);
+  color: var(--background);
   margin: 0.4rem 0;
 `;
 
@@ -65,9 +74,14 @@ const ButtonContainer = styled.div`
 `;
 
 const ProjectButton = styled.button`
-  border: solid 1px var(--white);
-  color: var(--white);
-  background: #329eab;
+  border: solid 1px var(--buttoncolor-gradient);
+  color: var(--lighttext);
+  background: linear-gradient(
+    160deg,
+    var(--buttoncolor),
+    var(--buttoncolor-gradient)
+  );
+  box-shadow: 5px 5px 20px var(--lighttext-shade);
 `;
 
 const ProjectsPage = () => (
