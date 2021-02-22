@@ -11,7 +11,7 @@ const CVContainer = styled.div`
 
 const CVCard = styled.div`
   border-radius: 25px;
-  background: var(--white);
+  background: var(--lighttext);
   padding: 2rem 3rem 2rem;
   margin: 1.5rem 0 1.5rem 3rem;
   width: fit-content;

@@ -9,16 +9,17 @@ const GlobalStyle = createGlobalStyle`
 }
 
 :root {
-  --midnightblue: #151420;
-  --darkgrey: #292929;
-  --brown: #3c312f;
+  --background: #151420;
+  --bars: #3c312f;
+  --darktext: #292929;
+  --lighttext: #f9f9f9;
+  --buttoncolor: #329eab;
   --grey: #585858;
   --lightgrey: #d5d5d5;
-  --white: #f9f9f9;
 }
 
 body {
-  background: var(--midnightblue);
+  background: var(--background);
   margin: 0;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
@@ -36,7 +37,7 @@ button {
   letter-spacing: 0.2rem;
   background: transparent;
   padding: 1rem;
-  margin: 0.5rem;
+  margin: 1rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   transition: all 0.2s ease-in-out;

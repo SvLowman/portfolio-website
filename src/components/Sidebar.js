@@ -1,19 +1,19 @@
 import React from "react";
 import styled from "styled-components/macro";
 import { Link, useLocation } from "react-router-dom";
-// import portrait from "../assets/portrait-copy.jpg";
+import portrait from "../assets/portrait-copy.jpg";
 import construction from "../assets/sidebar/emoji-baustelle.png";
 import cutlery from "../assets/sidebar/emoji-besteck.png";
 import rollercoaster from "../assets/sidebar/emoji-achterbahn.png";
 
 const SidebarContainer = styled.div`
-  background: var(--brown);
+  background: var(--bars);
   position: fixed;
   width: 20%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   animation: slidesidebar 3s reverse;
   transition-timing-function: ease-out;
@@ -35,20 +35,31 @@ const SidebarContainer = styled.div`
     width: 100%;
     height: fit-content;
     position: relative;
+    @keyframes slidesidebar {
+      0% {
+        transform: translate(0, 0);
+      }
+      66% {
+        transform: translate(calc(-50vw - 50%));
+      }
+      100% {
+        transform: translate(calc(-50vw - 50%));
+      }
+    }
   }
 `;
 
-// const Portrait = styled.img`
-//   width: 10rem;
-//   border-radius: 100%;
-//   margin: 1rem;
-//   @media (orientation: portrait) {
-//     display: none;
-//   }
-// `;
+const Portrait = styled.img`
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100%;
+  margin: 1rem;
+  @media (orientation: portrait) {
+    display: none;
+  }
+`;
 
 const LinkButtonContainer = styled.div`
-  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -76,8 +87,12 @@ const LinkButtonContainer = styled.div`
 
 const LinkButton = styled.button`
   border: ${(props) =>
-    props.active ? "solid 1px #329eab" : "solid 1px var(--white)"};
-  color: ${(props) => (props.active ? "#329eab" : "var(--white)")};
+    props.active
+      ? "solid 1px var(--buttoncolor)"
+      : "solid 1px var(--lighttext)"};
+  color: ${(props) =>
+    props.active ? "var(--buttoncolor)" : "var(--lighttext)"};
+  margin: 1rem 0.5rem;
   display: flex;
   align-items: center;
   @media (orientation: portrait) and (max-width: 475px) {
@@ -95,11 +110,19 @@ const LinkButtonImage = styled.img`
   }
 `;
 
+const Placeholder = styled.div`
+  height: 4rem;
+  margin: 1rem;
+  @media (orientation: portrait) {
+    display: none;
+  }
+`;
+
 const Sidebar = () => {
   const location = useLocation();
   return (
     <SidebarContainer>
-      {/* <Portrait src={portrait} alt="Portrait" /> */}
+      <Portrait src={portrait} alt="Portrait" />
       <LinkButtonContainer>
         <Link to="/">
           <LinkButton active={location.pathname === "/"}>
@@ -119,6 +142,7 @@ const Sidebar = () => {
           </LinkButton>
         </Link>
       </LinkButtonContainer>
+      <Placeholder />
     </SidebarContainer>
   );
 };

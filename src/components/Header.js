@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components/macro";
 
 const HeaderContainer = styled.div`
-  background: var(--brown);
-  color: var(--white);
+  background: var(--bars);
+  color: var(--lighttext);
   text-align: center;
   border: solid 1px black;
   position: fixed;

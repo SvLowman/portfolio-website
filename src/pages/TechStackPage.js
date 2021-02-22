@@ -23,7 +23,7 @@ const TechStackContainer = styled.div`
 
 const TechStackCard = styled.div`
   border-radius: 25px;
-  background: var(--white);
+  background: var(--lightext);
   width: 30%;
   margin: 1.5%;
   padding: 1.5%;
@@ -49,6 +49,7 @@ const TechStackCard = styled.div`
     align-items: center;
     margin: auto 0;
     p {
+      color: var(--background);
       font-family: "Montserrat", sans-serif;
       font-weight: 700;
       text-align: center;

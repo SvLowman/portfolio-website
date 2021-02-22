@@ -6,8 +6,8 @@ import linkedinlogo from "../assets/footer/linkedin-logo.svg";
 import neuefischelogo from "../assets/footer/neuefische-logo.svg";
 
 const FooterContainer = styled.div`
-  background: var(--brown);
-  color: var(--white);
+  background: var(--bars);
+  color: var(--lighttext);
   text-align: center;
   border: solid 1px black;
   position: fixed;
@@ -44,11 +44,13 @@ const ContactContainer = styled.div`
     :hover {
       transform: scale(1.1);
     }
-    @media (max-width: 475px) {
+    @media (max-width: 500px) {
       width: 2rem;
     }
-    @media (max-width: 300px) {
-      width: 1.5rem;
+  }
+  p {
+    @media (max-width: 500px) {
+      font-size: smaller;
     }
   }
 `;
